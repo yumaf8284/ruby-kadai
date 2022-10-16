@@ -4,7 +4,7 @@ class People
    p "Peopleのインスタンスが作られました"
   end
   
-  def people
+  def self.people
     p "私はPeopleクラスです"
   end
   
@@ -16,8 +16,9 @@ class People
   
 end
 
+People.people
+
 pio = People.new
-pio.people
 pio.name = "あああ"
 p pio.name
 
